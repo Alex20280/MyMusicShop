@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity">
+
+    <TextView
+        android:id="@+id/orderCustomerName"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer name: "
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/orderGoodsName"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Goods name: "
+        app:layout_constraintTop_toBottomOf="@+id/orderCustomerName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/orderQuantity"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity: "
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/orderGoodsName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/orderPrice"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: "
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/orderQuantity"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/orderOrderPrice"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Price: "
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/orderPrice"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/orderCustomerNameValue"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/orderCustomerName"
+ />
+
+    <TextView
+        android:id="@+id/orderGoodsNameValue"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/orderGoodsName"
+        app:layout_constraintTop_toBottomOf="@+id/orderCustomerNameValue"
+         />
+
+    <TextView
+        android:id="@+id/orderQuantityValue"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/orderQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/orderGoodsNameValue" />
+
+    <TextView
+        android:id="@+id/orderPriceValue"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/orderPrice"
+        app:layout_constraintTop_toBottomOf="@+id/orderQuantityValue" />
+
+    <TextView
+        android:id="@+id/orderOrderPriceValue"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/orderOrderPrice"
+        app:layout_constraintTop_toBottomOf="@+id/orderPriceValue"
+        />
+
+    <Button
+        android:id="@+id/sendByEmailBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:backgroundTint="#733101"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Submit Order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
